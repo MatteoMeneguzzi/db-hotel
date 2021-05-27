@@ -38,7 +38,8 @@ WHERE `status` = 'accepted';
 
 SELECT * 
 FROM `ospiti`
-WHERE YEAR(`date_of_birth`) = '1975';
+WHERE `docuemnt_type` = 'Driver License'
+AND YEAR(`date_of_birth`) = '1975';
 
 
 8: 
@@ -46,6 +47,12 @@ WHERE YEAR(`date_of_birth`) = '1975';
 SELECT * 
 FROM `paganti` 
 WHERE `ospite_id` <> 'NULL';
+
+MEGLIO:
+
+SELECT * 
+FROM `paganti` 
+WHERE `ospite_id` IS NOT NULL;
 
 9:
 
