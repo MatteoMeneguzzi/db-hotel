@@ -25,13 +25,14 @@ WHERE `name` LIKE ‘D%’;
 5:
 
 SELECT SUM(`price`)
-FROM (`pagamenti`)
+FROM `pagamenti`
 WHERE `status` = 'accepted';
 
 6:
 
 SELECT MAX(`price`)
-FROM (`pagamenti`);
+FROM `pagamenti`
+WHERE `status` = 'accepted';
 
 7:
 
